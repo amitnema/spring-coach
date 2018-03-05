@@ -1,16 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.nema.tutorial</groupId>
+	<groupId>org.apn.tutorial</groupId>
 	<artifactId>spring-coach</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>base</module>
+		<module>spring-quickstart-annotation</module>
+		<module>spring-quickstart-xml</module>
 	</modules>
 	<dependencies>
-		<!-- This dependency added for the spring base only. -->
-		<!-- It propvids following functionalitis -->
+		<!-- This dependency added for the spring quickstart only. -->
+		<!-- It provides following functionalities -->
 		<!-- # core -->
 		<!-- # beans -->
 		<!-- # aop -->
@@ -18,7 +19,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.1.RELEASE</version>
+			<version>5.0.4.RELEASE</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -33,4 +34,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	<name>Spring Coach</name>
+	<url>Spring Coach</url>
 </project>
