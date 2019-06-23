@@ -4,12 +4,4 @@ language: java
 jdk:
   - oraclejdk8
 
-sudo: true
-install: true
 dist: trusty
-
-# cache the build tool's caches
-cache:
-  directories:
-    - $HOME/.m2
-    - $HOME/.sonar
