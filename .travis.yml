@@ -1,14 +1,8 @@
 language: java
-
-# use Java 8
-jdk:
-  - oraclejdk8
-
 sudo: true
 install: true
+before_script:
+  - sudo sysctl -w vm.max_map_count=262144
 
-# cache the build tool's caches
-cache:
-  directories:
-    - $HOME/.m2
-    - $HOME/.sonar
+jdk:
+  - oraclejdk8
